@@ -1,3 +1,80 @@
+<-----------------------------(Boolean formate)code for sequential search / Linear search ------------------------------------------>
+public class Main
+{
+	public static void main(String[] args) {
+		 int arr[] = {21,23,56,23,44,56,67,88,67,5,1};
+		 int target  = 99;
+	         boolean  result = LineraSearch(arr,target);
+                 System.out.println(result);
+	    }
+		static  boolean LineraSearch(int arr[], int target ){
+	           if(arr.length == 0){
+	               return false;
+	           }
+		   for(int element : arr){
+	                 if(element  ==  target){
+	                     return true;
+	              }
+	           
+	               }
+	                     return false;
+	                                         } 
+	    
+}
+
+<-----------------------------------(retuen value)code for sequential search / Linear search-------------------------------------------->
+
+public class Main
+{
+	public static void main(String[] args) {
+		 int arr[] = {21,23,56,23,44,56,67,88,67,5,1};
+		 int target  = 99;
+	         int  result = LineraSearch(arr,target);
+                 System.out.println(result);
+	    }
+		static  int  LineraSearch(int arr[], int target ){
+	           if(arr.length == 0){
+	               return -1;
+	           }
+		   for(int element : arr){
+	                 if(element  ==  target){
+	                     return element;
+	              }
+	           
+	               }
+	                     return -1;
+	                                         } 
+	    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <-----------------------------code for finding minimum value in given array-------------------------------------->
 
 public class Main
@@ -5,14 +82,11 @@ public class Main
 	public static void main(String[] args) {
 // 		System.out.println("Hello World");
 		int arr[] = {21,23,56,23,44,56,67,88,67,5,1};
-		//int target  = 56;
-		int result = min(arr);
+	        int result = min(arr);
 		System.out.println("The Minimum value in given array is : " + result);
 		//System.out.println(result);
 		
-	}
-	
-// 	static int LineraSearch( int arr[], int target){
+	}	
 	    static int min(int arr[]){
 	        int ans = arr[0];
 	        for(int i =0; i<arr.length; i++){
@@ -25,3 +99,6 @@ public class Main
 	}
 	
 }
+
+
+
