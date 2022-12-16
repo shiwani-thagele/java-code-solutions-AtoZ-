@@ -1,1 +1,25 @@
+<----------------------------------------------------Searching in string(find the alphabet from given string)------------------------------------->
+public class Main
+{
+	public static void main(String[] args) {
+	    String name  = "shiwani";
+	     char target = 'w';
+	     boolean ans = search(name,target);
+	     System.out.println(ans);
+	     
+		//System.out.println("Hello World");
+	}
+	static boolean search(String str , char target){
+	    if(str.length() == 0 ){
+	        return false;
+	    }
+	    for(int i  =0; i<str.length() ; i++){
+	        if(target == str.charAt(i)){
+	            return true;
+	        }
+	    }
+	    return false;
+	    }
+	    
+	}
 
