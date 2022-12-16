@@ -47,6 +47,32 @@ public class Main
 	    
 }
 
+<---------------------------------------------(return index)code for sequential search / Linear search----------------------------------------------->
+
+public class Main
+{
+	public static void main(String[] args) {
+		int arr[] = {21,23,56,23,44,56,67,88,67,5,1};
+		 int target  = 5;
+	      int   result = LineraSearch(arr,target);
+	    System.out.println(result);
+		
+	}
+	    static  int  LineraSearch(int arr[], int target ){
+	           if(arr.length == 0){
+	               return -1;
+	          }
+	       for(int index =0 ; index < arr.length; index++ ){
+	           int element = arr[index];
+	           if(element == target){
+	               return index;
+	           }
+	       }
+	       return -1;
+	    } 
+	    
+	}
+
 
 
 
