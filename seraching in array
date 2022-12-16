@@ -73,33 +73,32 @@ public class Main
 	    
 	}
 
+<-------------------------------------------(Search in Range)code for sequential search / Linear search ----------------------------------------->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+public class Main
+{
+	public static void main(String[] args) {
+		//System.out.println("Hello World");
+		int arr[] = {21,23,56,23,44,56,67,88,67,5,1};
+		int target = 67;
+		int result = LinerSearch(arr,target,0,4);
+		System.out.println(result);
+		
+	}
+	static int LinerSearch( int arr[], int target , int start, int end){
+	    if(arr.length == 0){
+	        return -1;
+	    }
+	    
+	    for(int index=start; index <= end; index++){
+	                 int element  = arr[index];
+	                 if(element == target) {
+	                     return index;
+	                 }
+	    }
+	     return -1;
+	}
+}
 
 <-----------------------------code for finding minimum value in given array-------------------------------------->
 
